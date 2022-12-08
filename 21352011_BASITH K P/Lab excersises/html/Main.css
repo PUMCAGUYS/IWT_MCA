@@ -1,0 +1,58 @@
+.abc{
+    background-color: orange;
+}
+.bcd{
+    font-size:30px;
+    text-align:center ;
+}
+.efg{
+    font-size:20px;
+    text-align: center;
+}
+.red{
+    background-color: red;
+}
+.pink{
+    background-color: pink;
+}
+.blink{
+    color:white;
+    animation: blink 2s linear infinite ;
+    font-size: 70px;
+    text-align: center;
+
+}
+
+
+@keyframes blink
+{
+    0%{opacity: 0;}
+    25%{opacity: .25;}
+    50%{opacity: .5;}
+    75%{opacity: .75;}
+    
+    100%{opacity: 1;}
+}
+.hh{
+    text-align:center;color:rgb(5, 5, 5);
+}
+.tb1{
+    background-color:rgb(248, 248, 248);
+    margin: auto;
+} 
+.tb2{
+    margin: auto;
+    border: 2px solid black;
+}
+.bold{
+    font-weight:bold;
+    }
+.underl{
+    text-decoration:underline;
+    }
+.ital{
+    font-style:italic;
+    }
+.center{
+    text-align: center;
+}
