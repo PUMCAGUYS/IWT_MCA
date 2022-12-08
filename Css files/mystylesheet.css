@@ -1,0 +1,105 @@
+
+#blinkscroll{
+	background-color:red;
+	}
+#para1 {
+  text-align: center;
+  color: white;
+}
+#form{
+	background-color: lightgreen;
+}
+#l1 {
+  text-align: center;
+  color: white;
+}
+#left{
+	background-color: purple;
+
+}
+#Right {
+  text-align: center;
+  background-color: lightgreen;
+}
+#r1 {
+  text-align: center;
+ color: darkorchid;
+
+}
+#top{
+  text-align: center;
+  background-color: blueviolet;
+}
+#t1{
+	text-align: center;
+  color: peach;
+}
+#form {
+ 
+  background-color: seagreen ;
+}
+#rf {
+  text-align: center;
+  color: powderblue;
+}
+
+table,th, td {
+ text-align: center;
+ border: 1px solid;
+}
+
+td {
+  text-align: center;
+  height: 50px;
+  vertical-align: bottom;
+}
+
+#f1 {
+  background-color: lightsteelblue;
+}
+#fh2{
+  text-align: center;
+  color: maroon;
+}
+#fh6{
+  text-align: center;
+ color:darkred;
+
+}
+#body{
+  background-color: lightgrey;
+}
+#body1{
+   background-image: url("images\flower.jpg");
+  width: 120;
+  height: 120;
+}
+#th2{
+  text-align: left;
+ color: powderblue;
+ 
+  }
+
+ #styles{
+ 	background-color:lightblue;
+ }
+ #p1{
+font-weight: bold;
+text-align: center;
+ }
+ #p2{
+ 	 text-decoration-line: underline;
+ 	 text-align: center;
+ }
+ #p3{
+ 	font-style: italic;
+ 	text-align: center;
+ }
+ #p4{
+ 	text-align: center;
+ 	font-weight: bold;
+ 	text-decoration-line: underline;
+ 	font-style: italic;
+ 	color: orangered;
+
+ }
