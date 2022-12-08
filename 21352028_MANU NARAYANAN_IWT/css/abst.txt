@@ -1,0 +1,24 @@
+Abstract—Exposure bracketing is crucial to high dynamic
+range imaging, but it is prone to halos for static scenes and
+ghosting artifacts for dynamic scenes. The recently proposed
+structural patch decomposition for multi-exposure fusion (SPDMEF) has achieved reliable performance in deghosting, but suffers from visible halo artifacts and is computationally expensive.
+In addition, its relationship to other MEF methods is unclear.
+We show that without explicitly performing structural patch
+decomposition, we arrive at an unnormalized version of SPDMEF, which enjoys an order of 30× speed-up, and is closely
+related to pixel-level MEF methods as well as the standard twolayer decomposition method for MEF. Moreover, we develop a
+fast multi-scale SPD-MEF method, which can effectively reduce
+halo artifacts. Experimental results demonstrate the effectiveness
+of the proposed MEF method in terms of speed and quality.
+Index Terms—Multi-exposure fusion, high dynamic range
+imaging, computational photography.
+
+
+V. CONCLUSION
+We studied in-depth the structural patch decomposition
+(SPD) method for MEF, and presented an unnormalized approximation of it, which speeds up SPD-MEF more than
+30 times without sacrificing the MEF performance. We then
+presented a multi-scale extension of SPD-MEF to effectively
+reduce halo artifacts near strong edges. Quantitative and qualitative experiments on static and dynamic scenes validated the
+advantages of the proposed fast multi-scale SPD-MEF method,
+which provides a practical solution to fusing high-resolution
+dynamic sequences on mobile devices
