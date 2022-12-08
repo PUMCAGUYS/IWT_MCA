@@ -1,0 +1,15 @@
+table,th,td{
+	text-align: center;
+	border: 1px solid;
+}
+#t1{
+	text-align: center;
+	color: blue;
+}
+
+body{
+	text-align: center;
+}
+h3{
+	color: navy;
+}
