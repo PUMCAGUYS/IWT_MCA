@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>program 1 b</title>
+	<style type="text/css">
+		.blink{
+			animation: blink 1s linear infinite;
+			font-size: 60px;
+		}
+		marquee{
+			color: black;
+		}
+		@keyframes blink{
+			0%{
+				color: white;
+				opacity: 1;
+				
+
+			}
+			50%{
+				color: white;
+				opacity: 0;
+				
+			}
+			100%{
+				color: white;
+				opacity: 1;
+				
+			}
+		}
+	</style>
+</head>
+<body bgcolor="red">
+	
+	<p class="blink" align="center">Warning</p>
+	<marquee direction="left" behavior="scroll">Read the Message
+</marquee>
+
+</body>
+</html>

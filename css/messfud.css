@@ -1,0 +1,50 @@
+div:hover{ border:10px outset DarkGoldenRod;  
+box-shadow:8px 15px 10px DarkSalmon; 
+} 
+
+.mon{
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px 8px pink inset;
+}
+
+.tue{
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px 8px blue inset;
+
+}
+
+.wed{
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px 8px green inset;
+}
+
+.thur{
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px 8px #888888 inset;
+}
+
+.fri{
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px 8px red inset;
+}
+
+.sat{
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px 8px brown inset;
+}
+
+.sun{
+	border: 1px solid;
+	padding: 10px;
+	box-shadow: 5px 10px 8px orange inset;
+}
+h3{
+	font-family: elephant;
+	color: navy;
+}
