@@ -1,0 +1,153 @@
+#blink{
+    color:white;
+    animation: blink 1s linear infinite ;
+    font-size: 50px;
+    text-align: center;
+
+  
+}
+@keyframes blink
+{
+    0%{opacity: 0;}
+    50%{opacity: .5;}
+    100%{opacity: 1;}
+}
+#scroll{	
+    position: relative;
+    color: rgb(240, 235, 227);
+   }
+   
+marquee
+{
+    color: white;
+    font-size: 20px;
+}
+
+  #h1 {
+    text-align: left;
+     color: white;
+   }
+  
+  #h2 {
+    text-align: center;
+    color: white;
+  }
+   #form1{
+    background-color: lightgreen;
+   }
+   #l1 {
+     text-align: center;
+     color: white;
+   }
+   
+   #orange{
+    text-align: center;
+    background-color: orange;
+   }
+   #r1 {
+     text-align: center;
+    color: darkorchid;
+   
+   }
+   #red{
+     text-align: center;
+     background-color: rgb(235, 5, 5);
+   }
+   #bisque{
+    text-align: left;
+    background-color: bisque;
+   }
+
+   #red1{
+    text-align: left;
+    color: red;
+   }
+   
+   #t1{
+    text-align: center;
+     color: peach;
+   }
+   #rf {
+     text-align: center;
+     color: powderblue;
+   }
+   
+   table,th, td {
+    text-align: center;
+    border: 1px solid;
+   }
+   
+   td {
+     text-align: center;
+     height: 50px;
+     vertical-align: bottom;
+   }
+   
+   #f1 {
+     background-color: lightsteelblue;
+   }
+   #fh2{
+     text-align: center;
+     color: maroon;
+   }
+   #fh6{
+     text-align: center;
+    color:darkred;
+   
+   }
+   #body{
+     background-color: lightgrey;
+   }
+   #body1{
+      background-image: url("manu.jpg");
+     width: 200px;
+     height: 15px;
+   }
+   #th2{
+     text-align: left;
+    color: powderblue;
+    
+     }
+   
+    #sty{
+     background-color:lightblue;
+    }
+    #p0{
+        text-align: left;
+    }
+    #p1{
+   font-weight: bold;
+   text-align: center;
+    }
+    #p2{
+      text-decoration-line: underline;
+      text-align: center;
+    }
+    #p3{
+     font-style: italic;
+     text-align: center;
+    }
+    #p4{
+     text-align: center;
+     font-weight: bold;
+     font-style: italic;
+     color: orangered;
+   
+    }
+    #p5{
+        text-align: center;
+        text-decoration-line: underline;
+        font-style: italic;
+        color: orangered;
+      
+       }
+       #p6{
+        text-align: center;
+        font-weight: bold;
+        text-decoration-line: underline;
+        color: orangered;
+      
+       }
+   
+   
+
