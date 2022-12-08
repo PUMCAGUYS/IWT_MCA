@@ -1,0 +1,40 @@
+body {
+  
+  background-image: url("00.jpg");
+  background-color: #cccccc;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+header h1 {
+  font-size: 70px;
+  font-weight: 600;
+  background-image: linear-gradient(to left, #553c9a, #b393d3);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+div.ex1 { 
+  background-color: lightgreen;
+  border: 2px solid black;
+  padding: 15px;
+}
+
+div.ex2 { 
+  background-color: red;
+  border: 2px solid black;
+  padding: 15px;
+} 
+div.ex3 { 
+  background-color: lightblue;
+  border: 2px solid black;
+  padding: 15px;  
+}
+div.ex4 { 
+  background-color: navajowhite;
+  border: 2px solid black;
+  padding: 15px;
+}
