@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <!--####################### start header area ##########################-->
+     <header class="header_area">
+         <div class="main-menu">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                  <ul class="navbar-nav">
+                    <li class="nav-item ">
+                      <a class="nav-link" href="#main">Home </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#skills">skills</a>
+                    </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+         </div>
+     </header>
+
+    <!--####################### End header area ##########################-->
+
+    <!---------------------------------start main area----------------------------------------->
+
+
+    <main class="site-main" id="main">
+      <section class="site-banner">
+          <div class="container">
+              <div class="row">
+                <div class=" site-title">
+                  <br><br>
+                <h1 class="title-text ">I am Nawal Sidique MK </h1>
+                <h4 class="tile-text text-uppercase">Computer Science graduate</h4>
+                </div>
+                <div class=" image col-lg-6 col-md-12">
+                    <img src="./img/Profile.png"  class="img-fluid col-lg-6">
+                </div>
+              </div>
+          </div>
+      </section>
+
+      <!----------------------about area------------------------------------->
+         <section class="about-area" id="about">
+              <div class="site-title">
+                <h2 class="title-text">ABOUT ME</h2>
+                <p class="title-text">An enthusiastic Computer Science Graduate with quick learning
+                  abilities and positive attitude. Seeking a deserving position where I
+                  can contribute to company's growth with my analytical skills while
+                  working in a highly challenging competitive environment for the
+                  enhancement of my creative abilities and optimum profitability of
+                  the organization .</p>
+                  
+          </div>
+         </section>
+
+      <!----------------------end about area------------------------------------->
+      <!------------------------Skills area------------------------------------------>
+        
+      
+      <section class="skill-area" id="skills">
+                  <h2>My Skills</h2>
+                  <div class="my-skills">
+                    <div class="col-left">
+                    <img src="./img/sql.png" class="logo">
+                      <h3>sql-database</h3>
+                    </div>
+                    <div class="col-center">
+                    <img src="./img/html.png" class="logo">
+                    <h3>html</h3>
+                    </div>
+                    <div class="col-right">
+                    <img src="./img/Css.png" class="logo">
+                    <h3>css</h3>
+                    </div>
+                  </div>
+                  <div class="my-skills">
+                  <div class="col-left">
+                    <img src="./img/javascript.png" class="logo">
+                    <h3>Javascript</h3>
+                  </div>
+                  <div class="col-center">
+                    <img src="./img/python.png" class="logo">
+                    <h3>Python</h3>
+                  </div>
+                  <div class="col-right">
+                    <img src="./img/java.png" class="logo">
+                    <h3>Java</h3>
+                  </div>
+                </div>
+                </div>
+      </section>
+
+      <!------------------------ end Skills area-------------------------------------->
+      <!------------------------ education area-------------------------------------->
+      <div class="prt_about_edulearn_wrapper" id="education" >
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+          <div class="prt_heading_wrapper">
+            <div class="prt_heading">
+              <h1 class="timeline-heading"> Education </h1>
+            </div>
+          </div>
+          <div class="prt_about_learnsection" >
+            <div *ngFor="let i of timeline"wmAnimate="landing" aos speed="normal">
+              <div [class]=i.className1>
+                <div [class]=i.className2>
+                </div>
+              </div>
+              <div class="mar-right">
+                <div class="prt_about_learnbox_left">
+                  <div class="prt_about_learnbox_year">
+                    <h1>2021</h1>
+                  </div>
+                  <div class="prt_about_learnbox_info">
+                    <h4>Master Of Computer Application</h4>
+                    <span>
+      							  Masters											 
+                    </span>
+                    <p>Iam Pursuing my Masters degree from Pondicherry University and is expected to complete on 2023.</p>
+                  </div>
+                </div>
+              </div>
+             <div class="mar-left">
+                <div class="prt_about_learnbox_right">
+                  <div class="prt_about_learnbox_year">
+                    <h1>2018</h1>
+                  </div>
+                  <div class="prt_about_learnbox_info">
+                  <h4>BSc COMPUTER SCIENCE </h4>
+                    <span>Under Graduation  </span>
+                    <p>Successfully completed my undergraduation in 2021 from Sullamussalam Science College , Areekode under Calicut university. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mar-right">
+                <div class="prt_about_learnbox_left">
+                  <div class="prt_about_learnbox_year">
+                    <h1>2016</h1>
+                  </div>
+                  <div class="prt_about_learnbox_info">
+                    <h4>Higher Secondary </h4>
+                    <span>
+      							  Higher Secondary Education										 
+                    </span>
+                    <p>Successfully completed my Higher Secondary studies in Computer Sceince stream from Rahmania HSS, Calicut. </p>
+                  </div>
+                </div>
+              </div>
+              <div class="mar-left">
+                <div class="prt_about_learnbox_right">
+                  <div class="prt_about_learnbox_year">
+                    <h1>2014</h1>
+                  </div>
+                  <div class="prt_about_learnbox_info">
+                    <h4>High School</h4>
+                    <span>CBSE Board</span>
+                    <p>Successfully completed my high school studies in 2014 from Markazul Uloom English School, Kondotty.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!------------------------ end education area-------------------------------------->
+       <!------------------------ Contact area-------------------------------------->
+       <footer>
+         <div class="contact" id="con">
+             <h2>Contact Me ☎️</h2>
+             <p>Any query or have any other project contact me!</p>
+            </div>
+              </footer>
+       <!------------------------ end contact area-------------------------------------->
+    </main>
+</body>
+</html>
+
