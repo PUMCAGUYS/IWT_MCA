@@ -1,0 +1,76 @@
+<html>
+
+<head>
+<style>
+
+#reddot{
+ width:200px;
+ height:200px;
+ position: absolute;
+ top: 200px;;
+ left:0;
+ }
+ #startBtn,#stopBtn
+ {
+    width:50px;
+    height:50px;
+    border:20px;
+ }
+ #startBtn{
+    background-color:skyblue;
+ }
+ #stopBtn{
+    background-color:rgb(222, 34, 144);
+ }
+</style>
+
+
+</head>
+<body>
+
+<div id=""></div>
+<img src="images/movingcycle.gif" id="reddot">
+<button type="button" id="startBtn" onclick="walk()">Start</button>
+<button type="button" id="stopBtn" onclick="stop()">Stop</button>
+</body>
+
+<script>
+var x=0;
+var y= document.getElementById("reddot");
+var flag=0;
+document.write()
+function walk(){
+ intrVl=setInterval(function(){
+ if(x==window.screen.width-85)
+ {
+  flag=1;
+  y.style.transform="rotateY(180deg)";
+ }
+ else if(x==0)
+ {
+  flag=0;
+  y.style.transform="rotateY(360deg)";
+ }
+ 
+  if(flag==1)
+  {
+  x--;
+  y.style.left=x; 
+  
+  }
+  else{
+ 
+  x++;
+  y.style.left=x;
+  
+  } 
+  
+  },5);
+ 
+ }
+ function stop()
+ {
+    clearInterval(intrVl)
+ }
+</script>
+</html>

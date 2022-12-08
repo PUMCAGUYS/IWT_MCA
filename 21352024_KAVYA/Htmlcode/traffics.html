@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Signal</title>
+   <style>
+    #traffic-signal{
+        border: 8px solid rgb(4, 67, 73);
+        padding: 10px 3px;
+        width: 50px;
+        border-radius: 10px;
+    }
+   
+    #traffic-signal > div{
+        width:50px;
+        height: 50px;
+        border-radius: 10%;
+        opacity: .3;
+    }
+    #line1{
+        height:200px;
+        width:10px;
+        background:rgb(4, 67, 73);
+        margin-center:30px;
+    }
+    #line2{
+        height:10px;
+        width:70px;
+        background:rgb(4, 67, 73);
+    }
+    #green{
+        background-color: green;
+    }
+    #yellow{
+        background-color: yellow;
+    }
+    #red{
+        background-color: red;
+    }
+    #stop{
+    font-weight: 900;
+    font-size: 20px;
+    padding-top: 30%;
+    
+   }
+   #ready{
+    font-weight: 900;
+    font-size: 18px;
+    padding-top: 30%;
+   }
+   #go{
+    font-weight: 900;
+    font-size: 20px;
+    padding-top: 30%;
+   }
+   </style>
+    </head>
+    <body onload="timer;">
+ 
+    <center><div id="traffic-signal">
+        <div id="green"><p id="go"> </p></div>
+        <div id="yellow"><p id="ready"> </p></div>
+        <div id="red"><p id="stop"> </p></div>
+    </div>
+</center>
+<center><div id="line1"></div>
+    <div id="line2"></div></center>
+    <script>
+    function startTrafficSignal () {
+        var green=document.getElementById("green");
+        var red=document.getElementById("red");
+        var yellow=document.getElementById("yellow");
+ 
+        green.style.opacity=1;
+        setTimeout(function () {
+            green.style.opacity=.2;
+            red.style.opacity=.2;
+            yellow.style.opacity=1;
+            document.getElementById("go").innerHTML="Go";
+        },5000);
+ 
+        setTimeout(function () {
+            green.style.opacity=.2;
+            red.style.opacity=1;
+            yellow.style.opacity=.2;
+            document.getElementById("ready").innerHTML="Ready";
+        },7000);
+ 
+        setTimeout(function () {
+            green.style.opacity=1;
+            red.style.opacity=.2;
+            yellow.style.opacity=.2;
+            document.getElementById("stop").innerHTML="Stop";
+        },12000);
+    }
+ 
+    var timer=setInterval(function () {
+        startTrafficSignal();
+    },12000);
+ 
+    startTrafficSignal();
+    </script>
+</body>
+</html>

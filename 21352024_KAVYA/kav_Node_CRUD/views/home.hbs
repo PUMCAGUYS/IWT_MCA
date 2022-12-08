@@ -1,0 +1,43 @@
+<h3>MCA DETAILS</h3>
+
+<TABLE>
+    <thead>
+        <tr>
+            <td>S.NO</td>
+            <td>NAME</td>
+            <td>REGISTER NUMBER</td>
+            <td>INSTITUTIONAL MAIL ID</td>
+            <td>PERSONAL MAIL ID</td>
+            <td>MOBILE</td>
+            <td><a href="/adduser" class="addbtn">Add User</a></td>
+            <td><a href="/searchuser" class="searchbtn">Search User</a></td>
+        </tr>
+        
+    </thead>
+    <tbody>
+{{#each rows}}
+    <tr>
+        <td>{{this.ID}}</td>
+        <td>{{this.Name}}</td>
+        <td>{{this.RegisterNumber}}</td>
+        <td>{{this.InstitutionalEmail}}</td>
+        <td>{{this.PersonalEmail}}</td>
+        <td>{{this.Mobile}}</td>
+        <td><a class="edit" href="/edituser/{{this.ID}}">EDIT</a></td>
+        <td><a onclick="return confirm('Are you sure?')" class="delete" href="/deleteuser/{{this.ID}}">DELETE</a></td>
+    </tr>
+{{/each}}
+{{#each rows}}
+    <tr>
+        <td>{{this.ID}}</td>
+        <td>{{this.Name}}</td>
+        <td>{{this.RegisterNumber}}</td>
+        <td>{{this.InstitutionalEmail}}</td>
+        <td>{{this.PersonalEmail}}</td>
+        <td>{{this.Mobile}}</td>
+        <td><a class="edit" href="/attendance/{{this.ID}}">ATTENDANCE</a></td>
+        <td><a onclick="return confirm('Are you sure?')" class="delete" href="/deleteuser/{{this.ID}}">DELETE</a></td>
+    </tr>
+{{/each}}
+    </tbody>
+</TABLE>

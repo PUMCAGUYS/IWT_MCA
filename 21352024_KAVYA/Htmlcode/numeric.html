@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+        How to check whether a value is
+        numeric or not 
+    </title>
+      
+    <script src=
+"https://code.jquery.com/jquery-1.12.4.min.js">
+    </script>
+</head>
+  
+<body style="text-align:center;">
+      
+    <h1 style = "color:rgb(143, 35, 23);" > Numeric or not
+    </h1> 
+      <hr>
+      
+    <form>
+        <p>
+            Enter any value: 
+            <input style="text-align:center;" type="text">
+        </p>
+          
+        <button type="button">Click to Check</button>
+    </form>
+    <hr>
+      
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $("button").click(function() {
+                var inputVal = $("input").val();
+                alert($.isNumeric(inputVal));
+            });
+        });
+    </script>
+</body>
+  
+</html> 
