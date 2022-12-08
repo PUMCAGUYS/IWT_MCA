@@ -1,0 +1,90 @@
+<h1><center>{{title}}</h1>
+<center>
+<form action="/searchaction" method="post">
+<style>
+    .button {
+  background-color:brown; 
+  border: none;
+  color: rgb(253, 253, 253);
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+input[type=text] {
+  width: 25%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+.other {
+    background-color: #e7e7e7; color: black;
+    font-size: large;
+    font-style: oblique;
+}
+</style>
+<label for="reg" class="other">Register number:</label>
+<input type="text" id="reg" name="reg">
+<button class="button">Search</button>
+
+
+</form>
+<style>
+    table,th,td{
+        border:1px solid black;
+       border-collapse:collapse}
+       th,td{
+        padding:15px;
+        text-allign:left;
+       }
+       html{
+        
+         background-image: url("images/img1.png")
+       }
+       table{
+        background-color:antiquewhite;
+       }
+ 
+
+</style>
+<center>
+<br><table>
+    
+    <tbody>
+        {{#each sampledata}}
+        <tr>
+            <td>Register Number:</td>
+            <td>{{this.regno}}</td>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td>{{this.Name}}</td>
+        </tr>
+        <tr>
+            <td>Instituitional Email id:</td>
+            <td>{{this.Institutional_Email}}</td>
+        </tr>
+        <tr>
+            <td>Personal Email id:</td>
+            <td>{{this.Personal_Email}}</td>
+        </tr>
+        <tr>
+            <td>Mobile:</td>
+            <td>{{this.Mobile}}</td>
+        </tr>
+        
+        
+        {{/each}}
+        
+    </tbody>
+</table>
+<br>
+<a href="/display"><button class="button">View</button></a>
+<a href="/table"><button class="button">Attendence</button></a>
+<a href="/edit"><button class="button">Edit</button></a>
+<a href="/add"><button class="button">Insert</button></a>
+<a href="/delete"><button class="button">Delete</button></a>
