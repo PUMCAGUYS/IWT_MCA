@@ -1,0 +1,33 @@
+.element{
+    animation:7s blink infinite;
+}
+
+@keyframes blink{
+    0%{
+        background-color: aqua;
+    }
+    50%{
+        background-color:crimson
+    }
+    100%{
+        background-color:chartreuse;
+    }
+}
+.text1{
+    animation:28s fade infinite;
+    font-size:60px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+@keyframes fade{
+    0%{
+        color:deeppink;
+        opacity:0.0;
+    }
+    100%{
+        opacity:1
+    }
+    
+
+}

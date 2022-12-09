@@ -1,0 +1,28 @@
+#checkBtn{
+    display:none;
+}
+#listing{
+    display:none;
+}
+#checkBtn:checked~#listing{
+    display:block;
+}
+label{
+    cursor:pointer;
+    border:2px solid black;
+    border-radius:30px;
+    padding:15px 20px;
+    font-size:30px;
+}
+label:hover{
+    background-color:lightgrey;
+}
+body {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    font-size: 20px;
+} 
