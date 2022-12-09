@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+    body{
+    height: 350px;
+    }
+ 
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      font-size: 20px;
+      padding-right: 20px;
+    }
+ 
+    .dropdown-item {
+      display: none;
+      position: absolute;
+      background-color: darkred;
+      min-width: 200px;
+      z-index: 1;
+    }
+ 
+    .dropdown:hover .dropdown-item {
+      display: block;
+    }
+ 
+    .caption {
+      padding: 15px;
+      text-align: center;
+      text-decoration: underline;
+      color:white;
+
+    }
+    </style>
+  </head>
+   
+  <body>
+    <h2>Image Dropdown</h2>
+    
+    <div class="dropdown">
+      London
+      <div class="dropdown-item">
+      <img src="https://images.pexels.com/photos/672532/pexels-photo-672532.jpeg" alt="London" width="400" height="300">
+      <div class="caption">This is London</div>
+      </div>
+      
+    </div>
+    
+
+    <div class="dropdown">
+         Tokyo
+        <div class="dropdown-item">
+        <img src="https://images.pexels.com/photos/2067048/pexels-photo-2067048.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Tokyo" width="400" height="300">
+        <div class="caption">This is Tokyo</div>
+        </div>
+      </div>
+  </body>
+</html>

@@ -1,0 +1,153 @@
+/*file 1 text styles page*/
+
+#file1_body{
+    text-align: center;
+    font-size: 30px;
+    margin-top: 30px;
+}
+#p1{
+    font-weight: bold;
+}
+#p2{
+    text-decoration: underline;
+}
+#p3{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+#p4{
+    font-style: italic;
+}
+#p5{
+    font-style: italic;
+    text-decoration: underline;
+}
+
+
+
+/*file 2 warning page*/
+
+#file2_body{
+    background-color: red;
+}
+#p6{
+    animation: blinker 1.5s linear infinite;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 90px; 
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+#p7{
+    font-size: 40px;
+    text-align: center;
+} 
+
+
+
+
+/*file 3 friend form*/
+
+#p8{
+    margin:0px auto;
+    width:500px;
+}
+#p9{
+    text-align: center;
+    margin-top: 80px;
+}
+#p10{
+    padding:9px;
+}
+
+
+
+/*file4 registration form*/
+
+#p11{
+    text-align:center;
+}
+#p12{
+    text-align:center;
+}
+#p13{
+    text-align:center;
+    padding-left: 450px;
+}
+#p13 td{
+    padding:5px;
+}
+
+
+
+/*file5 population form*/
+
+
+
+/* #p14 th,td{
+    padding: 5px;
+}
+#p14 td{
+    text-align: right;
+}
+#p14 table{
+    width:80%;
+} */
+#p14 {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width:55%;
+}
+#p14 td,th{
+    padding: 5px;
+    border: 2px solid black;
+}
+#p14 td{
+    text-align: right;
+}
+
+
+/*frames*/
+
+#b1{
+    background-color:orangered;
+}
+#b2{
+    background-color:rgb(212, 132, 108);
+    font-weight: bold;
+}
+#b3{
+    background-color:rgb(212, 132, 108);
+}
+#b4{
+    background-color:rgb(213, 167, 151);
+}
+#m4{
+    font-size: 30px;
+    text-align: center;
+}
+#b5{
+    background-color:rgb(213, 167, 151);
+}
+#pb5{
+    animation: blinkerr 1.5s linear infinite;
+    color: rgb(5, 2, 2);
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 60px;
+    font-size: 30px;
+}
+@keyframes blinkerr {
+    50% {
+        opacity: 0;
+    }
+}
+#b6{
+    background-color:rgb(213, 167, 151);
+}

@@ -1,0 +1,31 @@
+.element{
+    height: 250px;
+    width: 250px;
+    background-color: red;
+    animation-name: strech;
+    animation-duration: 1.5s; 
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes strech {
+    0%{
+        transform:scale(0.3);
+        background-color: red;
+        border-radius: 100%;
+    }
+    50%{
+        background-color:greenyellow;
+    }
+    100%{
+        transform:scale(1.5);
+        background-color:blue;
+    }
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

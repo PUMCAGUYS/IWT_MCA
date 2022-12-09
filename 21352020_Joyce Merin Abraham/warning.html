@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Message Page</title>
+        <style>
+            body{
+                background-color:red;
+            }
+            p{
+                animation: blinker 1.5s linear infinite;
+                
+                font-family: sans-serif;
+                color: white;
+                text-align: center;
+                margin-top: 60px;
+                font-size: 90px; 
+            }
+            @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+            }
+            marquee{
+                font-size: 40px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <p>WARNING !!</p>
+        <marquee width="100%" direction="up" height="100px">
+            Read the message..
+        </marquee>
+    </body>
+</html>
