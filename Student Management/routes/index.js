@@ -58,8 +58,9 @@ router.post('/attendence', (req, res) => {
  
  database.query("SELECT * FROM mca",(err, result)  => {
       var atten=[];
-      var data = req.query;
-     //console.log(data);
+      var data = req.body;
+     console.log(data);
+
     
      if(result.length){ 
      for( i = 0; i< result.length; i++) 
@@ -75,14 +76,14 @@ router.post('/attendence', (req, res) => {
    //console.log(date);
    
          atten[i] = data[regno];
-         if(atten[i]=='1'){
+         if(atten[i]==='1'){
          
            database.query(`INSERT INTO attendence (regno,date,remark) VALUES ('${regno}','${date}','PRESENT')` ,function (err,result){
              if(err){
              console.log(err);
              }
              else{
-             //console.log("sucess");
+            // console.log("sucess");
              //req.redirect('/');
              }
            });
@@ -94,7 +95,7 @@ router.post('/attendence', (req, res) => {
              console.log(err);
              }
              else{
-             //console.log("sucess");
+            // console.log("sucess");
              //req.redirect('/');
              }
            });
