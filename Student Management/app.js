@@ -71,7 +71,7 @@ app.get("/addstudent",(req,res) => {
   const { name, regno, iemail, pemail, mobile } = req.query
 
   //Sanitization XSS...
-  let qry = "select * from mca where Register_Number =?";
+  let qry = "select * from mca where Register_Number=?";
   database.query(qry, [regno],(err,results) => {
       if(err)
       throw err
@@ -106,7 +106,7 @@ app.get("/removestudent", (req, res) => {
 
   const { regno } = req.query;
 
-  let qry = "delete from mca where Register_Number =?";
+  let qry = "delete from mca where Register_Number=?";
   database.query(qry, [regno], (err, results) => {
       if (err) throw err
       else {
@@ -129,7 +129,7 @@ app.get("/edit",(req,res) => {
 app.get("/updatesearch", (req,res) => {
   const { regno } = req.query;
 
-let qry ="select * from mca where Register_Number =?";
+let qry ="select * from mca where Register_Number=?";
 database.query(qry,[regno],(err, results) => { 
   if(err)  throw err
   else {
@@ -144,7 +144,7 @@ database.query(qry,[regno],(err, results) => {
 app.get("/updatestudent", (req,res) => {
   //fetch data
   const { name, iemail, pemail, mobile, regno  } = req.query;
-  let qry = "update  mca set Name=?, Institutional_Email=?, Personal_Email=?, Mobile=? where Register_Number=?";
+  let qry = "update  mca set name=?, Institutional_Email=?, Personal_Email=?, Mobile=? where regno=?";
 
   database.query(qry,[name, iemail, pemail, mobile, regno], (err, results) => {
       if(err)
